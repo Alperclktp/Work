@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class ControlRigigBody : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Rigidbody _rigigbody;
+    [SerializeField] private RigigbodySettings _settings;
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+       if (Input.GetKeyDown(KeyCode.Space))
+       {
+            _rigigbody.AddForce(_settings.jumpForce, ForceMode.Impulse);
+       }
     }
 }
