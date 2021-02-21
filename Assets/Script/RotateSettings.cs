@@ -9,4 +9,5 @@ public class RotateSettings : ScriptableObject
     [SerializeField] public float _speed;
 
     public float speed { get { return _speed; } }
+
 }
