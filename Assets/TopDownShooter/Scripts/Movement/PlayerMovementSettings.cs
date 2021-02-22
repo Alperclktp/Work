@@ -9,5 +9,8 @@ namespace TopDownShooter.PlayerMovement
     {
         public float horizontalSpeed;
         public float verticalSpeed;
+        
+
+
     }
 }

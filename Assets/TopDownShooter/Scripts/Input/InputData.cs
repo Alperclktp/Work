@@ -10,5 +10,11 @@ namespace TopDownShooter.PlayerInput
     {
         public float horizontal;
         public float vertical;
+
+        [SerializeField] private Vector3 _jumpForce;
+
+        public Vector3 JumpForce { get { return _jumpForce; } }
+
+
     }
 }
