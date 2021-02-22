@@ -2,27 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Topdown Shooter/Camera/Camera Settings")]
-public class CameraSettings : ScriptableObject
+
+namespace TopDownShooter.Camera
 {
-    [Header("Rotation")]
-    [SerializeField] private float _rotationLerpSpeed;
+    [CreateAssetMenu(menuName = "Topdown Shooter/Camera/Camera Settings")]
+    public class CameraSettings : ScriptableObject
+    {
+        [Header("Rotation")]
+        [SerializeField] private float _rotationLerpSpeed;
 
-    public float RotationLerpSpeed { get { return _rotationLerpSpeed; } }
+        public float RotationLerpSpeed { get { return _rotationLerpSpeed; } }
 
-    [Header("Position")]
-    [SerializeField] private Vector3 _positionOffset;
+        [Header("Position")]
+        [SerializeField] private Vector3 _positionOffset;
 
-    public Vector3 PositionOffset { get { return _positionOffset; } }
+        public Vector3 PositionOffset { get { return _positionOffset; } }
 
-    [SerializeField] private float _positionLerp;
+        [SerializeField] private float _positionLerp;
 
-    public float PositionLerp { get { return _positionLerp; } }
+        public float PositionLerp { get { return _positionLerp; } }
 
-
-
-
-
-
-
+    }
 }
+
+
