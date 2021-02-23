@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TopDownShooter.PlayerInput;
 using UnityEngine;
 
-namespace TopDownShooter.PlayerMovement
+namespace TopDownShooter.PlayerControls
 {
     public class PlayerMovementController : MonoBehaviour
     {
@@ -18,12 +18,6 @@ namespace TopDownShooter.PlayerMovement
 
             _rigigbody.MovePosition(_rigigbody.position + (_rigigbody.transform.right * _inputData.horizontal *
                 _playerMovementSettings.horizontalSpeed));
-
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                _rigigbody.AddForce(_inputData.JumpForce, ForceMode.Impulse);
-            }
         }
-
     }
 }

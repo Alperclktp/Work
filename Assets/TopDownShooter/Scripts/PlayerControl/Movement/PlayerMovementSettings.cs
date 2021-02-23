@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace TopDownShooter.PlayerMovement
+namespace TopDownShooter.PlayerControls
 {
     [CreateAssetMenu(menuName = "Topdown Shooter/Player/Movement Settings")]
     public class PlayerMovementSettings : ScriptableObject
@@ -10,7 +10,5 @@ namespace TopDownShooter.PlayerMovement
         public float horizontalSpeed;
         public float verticalSpeed;
         
-
-
     }
 }
